@@ -1,0 +1,90 @@
+<nav id="resizable-nav">
+    
+
+   
+    {{ range .Site.RegularPages.ByDate.Reverse }}
+    <!-- Check if the page is a post -->
+    {{ if and (eq .Type "post") (not .Params.draft) }}
+        <a href="{{ .Permalink }}">
+            <section class="navcontainer">
+
+                <p>{{ .Params.artist }}</p>
+                {{ .Title }}
+                <p>{{ .Params.runtime }}</p>
+                
+                <img src="{{ .Params.previewImage }}">
+            </section>
+        </a>
+    {{ end }}
+{{ end }}
+
+
+
+
+    
+    </nav>
+<div id="scale-handle"></div>
+
+
+
+
+
+
+<script>
+    const resizableNav = document.getElementById('resizable-nav');
+    const handle = document.getElementById('scale-handle');
+
+    let startX;
+    let startWidth;
+    let startScrollLeft;
+    let startScrollTop;
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const storedWidth = JSON.parse(localStorage.getItem('resizableNavWidth'));
+        if (storedWidth) {
+            resizableNav.style.width = storedWidth + 'px';
+            const leftDistance = resizableNav.getBoundingClientRect().right;
+            handle.style.left = leftDistance - 152 + 'px';
+        }
+
+        const storedScrollTop = JSON.parse(localStorage.getItem('resizableNavScrollTop'));
+        if (storedScrollTop) {
+            resizableNav.scrollTop = storedScrollTop;
+        }
+    });
+
+    handle.addEventListener('mousedown', function(event) {
+        startX = event.clientX;
+        startWidth = parseInt(document.defaultView.getComputedStyle(resizableNav).width, 10);
+        startScrollLeft = resizableNav.scrollLeft;
+        startScrollTop = resizableNav.scrollTop;
+        document.addEventListener('mousemove', resizeNav);
+        document.addEventListener('mouseup', stopResize);
+    });
+
+    resizableNav.addEventListener('scroll', function() {
+        const scrollLeft = resizableNav.scrollLeft;
+        const scrollTop = resizableNav.scrollTop;
+        localStorage.setItem('resizableNavScrollTop', JSON.stringify(scrollTop));
+    });
+
+    function resizeNav(event) {
+        const width = startWidth + event.clientX - startX;
+        const leftDistance = resizableNav.getBoundingClientRect().right;
+        resizableNav.style.width = width + 'px';
+        handle.style.left = leftDistance - 152 + 'px';
+        document.body.style.userSelect = 'none';
+        document.body.style.mozUserSelect = 'none';
+        document.body.style.webkitUserSelect = 'none';
+
+
+        localStorage.setItem('resizableNavWidth', JSON.stringify(width));
+    }
+
+    function stopResize() {
+        document.removeEventListener('mousemove', resizeNav);
+        document.body.style.userSelect = 'auto';
+        document.body.style.mozUserSelect = 'auto';
+        document.body.style.webkitUserSelect = 'auto';
+    }
+</script>

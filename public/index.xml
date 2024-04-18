@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Homepage on Example</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content in Homepage on Example</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 14 Apr 2024 19:05:11 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Post11</title>
+      <link>http://localhost:1313/posts/post11/</link>
+      <pubDate>Sun, 14 Apr 2024 19:05:11 +0200</pubDate>
+      <guid>http://localhost:1313/posts/post11/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Post10</title>
+      <link>http://localhost:1313/posts/post10/</link>
+      <pubDate>Sun, 14 Apr 2024 19:05:06 +0200</pubDate>
+      <guid>http://localhost:1313/posts/post10/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Post9</title>
+      <link>http://localhost:1313/posts/post9/</link>
+      <pubDate>Sun, 14 Apr 2024 19:05:00 +0200</pubDate>
+      <guid>http://localhost:1313/posts/post9/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Post8</title>
+      <link>http://localhost:1313/posts/post8/</link>
+      <pubDate>Sun, 14 Apr 2024 19:04:40 +0200</pubDate>
+      <guid>http://localhost:1313/posts/post8/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Post7</title>
+      <link>http://localhost:1313/posts/post7/</link>
+      <pubDate>Sun, 14 Apr 2024 19:03:41 +0200</pubDate>
+      <guid>http://localhost:1313/posts/post7/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Post6</title>
+      <link>http://localhost:1313/posts/post6/</link>
+      <pubDate>Sun, 14 Apr 2024 19:02:34 +0200</pubDate>
+      <guid>http://localhost:1313/posts/post6/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Post5</title>
+      <link>http://localhost:1313/posts/post5/</link>
+      <pubDate>Sun, 14 Apr 2024 18:59:47 +0200</pubDate>
+      <guid>http://localhost:1313/posts/post5/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Post4</title>
+      <link>http://localhost:1313/posts/post4/</link>
+      <pubDate>Sun, 14 Apr 2024 10:30:18 +0200</pubDate>
+      <guid>http://localhost:1313/posts/post4/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Neue Show</title>
+      <link>http://localhost:1313/posts/newpost/</link>
+      <pubDate>Sun, 14 Apr 2024 00:58:01 +0200</pubDate>
+      <guid>http://localhost:1313/posts/newpost/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Zweite Show</title>
+      <link>http://localhost:1313/posts/ersteshow/</link>
+      <pubDate>Sat, 13 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/ersteshow/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Erste Show</title>
+      <link>http://localhost:1313/posts/neuerpost/</link>
+      <pubDate>Fri, 12 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/neuerpost/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Contact</title>
+      <link>http://localhost:1313/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/contact/</guid>
+      <description>Galerie Klein&#xA;c/o Matthias Klein&#xA;Eisenbahnstraße 104&#xA;04315 Leipzig</description>
+    </item>
+    <item>
+      <title>Imprint</title>
+      <link>http://localhost:1313/imprint/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/imprint/</guid>
+      <description>Impressum Angaben gemäß § 5 TMG&#xA;Galerie Klein Eisenbahnstraße 104 04315 Leipzig&#xA;Vertreten durch:&#xA;Matthias Klein&#xA;Kontakt:&#xA;Telefon: 01234-789456&#xA;E-Mail: max@muster.de&#xA;Haftungsausschluss:&#xA;Haftung für Inhalte&#xA;Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.</description>
+    </item>
+  </channel>
+</rss>

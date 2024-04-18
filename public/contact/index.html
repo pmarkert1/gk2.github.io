@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html style="visibility: hidden;">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=dedvice-width,initial-scale=1" />
+  <title> | Galerie Klein</title>
+
+  
+
+    <link rel="stylesheet" type="text/css" href="/css/main.min.e74997da2e949a6ffbb8645063490a733158c01f2ec0dde33a2d6e0185c059ff.css" integrity="sha256-50mX2i6Umm/7uGRQY0kKczFYwB8uwN3jOi1uAYXAWf8=" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+
+
+<script src="js/main.js"></script>
+
+</head>
+    <body id="body">
+
+        
+
+        
+        
+        <main>
+
+      
+                
+                <nav id="resizable-nav">
+    
+
+   
+    
+    
+    
+        <a href="http://localhost:1313/posts/post11/">
+            <section class="navcontainer">
+
+                <p>Your Default Artist</p>
+                Post11
+                <p>Your Default Runtime</p>
+                
+                <img src="">
+            </section>
+        </a>
+    
+
+    
+    
+        <a href="http://localhost:1313/posts/post10/">
+            <section class="navcontainer">
+
+                <p>Your Default Artist</p>
+                Post10
+                <p>Your Default Runtime</p>
+                
+                <img src="">
+            </section>
+        </a>
+    
+
+    
+    
+        <a href="http://localhost:1313/posts/post9/">
+            <section class="navcontainer">
+
+                <p>Your Default Artist</p>
+                Post9
+                <p>Your Default Runtime</p>
+                
+                <img src="">
+            </section>
+        </a>
+    
+
+    
+    
+        <a href="http://localhost:1313/posts/post8/">
+            <section class="navcontainer">
+
+                <p>Your Default Artist</p>
+                Post8
+                <p>Your Default Runtime</p>
+                
+                <img src="">
+            </section>
+        </a>
+    
+
+    
+    
+        <a href="http://localhost:1313/posts/post7/">
+            <section class="navcontainer">
+
+                <p>Your Default Artist</p>
+                Post7
+                <p>Your Default Runtime</p>
+                
+                <img src="">
+            </section>
+        </a>
+    
+
+    
+    
+        <a href="http://localhost:1313/posts/post6/">
+            <section class="navcontainer">
+
+                <p>Your Default Artist</p>
+                Post6
+                <p>Your Default Runtime</p>
+                
+                <img src="">
+            </section>
+        </a>
+    
+
+    
+    
+        <a href="http://localhost:1313/posts/post5/">
+            <section class="navcontainer">
+
+                <p>Your Default Artist</p>
+                Post5
+                <p>Your Default Runtime</p>
+                
+                <img src="">
+            </section>
+        </a>
+    
+
+    
+    
+        <a href="http://localhost:1313/posts/post4/">
+            <section class="navcontainer">
+
+                <p>Your Default Artist</p>
+                Post4
+                <p>83.94.2714 – 28.32-5029</p>
+                
+                <img src="">
+            </section>
+        </a>
+    
+
+    
+    
+        <a href="http://localhost:1313/posts/newpost/">
+            <section class="navcontainer">
+
+                <p>Kunstener Kunstenaar</p>
+                Neue Show
+                <p>76.09.2853 – 29.27.2736</p>
+                
+                <img src="">
+            </section>
+        </a>
+    
+
+    
+    
+        <a href="http://localhost:1313/posts/ersteshow/">
+            <section class="navcontainer">
+
+                <p>Josefff Beausy</p>
+                Zweite Show
+                <p>23.03.2024 - 17.03.2453</p>
+                
+                <img src="">
+            </section>
+        </a>
+    
+
+    
+    
+        <a href="http://localhost:1313/posts/neuerpost/">
+            <section class="navcontainer">
+
+                <p>Johannes Agoubewgoub</p>
+                Erste Show
+                <p>15.13.2024 – 24.03.2064</p>
+                
+                <img src="">
+            </section>
+        </a>
+    
+
+    
+    
+
+    
+    
+
+
+
+
+
+    
+    </nav>
+<div id="scale-handle"></div>
+
+
+
+
+
+
+<script>
+    const resizableNav = document.getElementById('resizable-nav');
+    const handle = document.getElementById('scale-handle');
+
+    let startX;
+    let startWidth;
+    let startScrollLeft;
+    let startScrollTop;
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const storedWidth = JSON.parse(localStorage.getItem('resizableNavWidth'));
+        if (storedWidth) {
+            resizableNav.style.width = storedWidth + 'px';
+            const leftDistance = resizableNav.getBoundingClientRect().right;
+            handle.style.left = leftDistance - 152 + 'px';
+        }
+
+        const storedScrollTop = JSON.parse(localStorage.getItem('resizableNavScrollTop'));
+        if (storedScrollTop) {
+            resizableNav.scrollTop = storedScrollTop;
+        }
+    });
+
+    handle.addEventListener('mousedown', function(event) {
+        startX = event.clientX;
+        startWidth = parseInt(document.defaultView.getComputedStyle(resizableNav).width, 10);
+        startScrollLeft = resizableNav.scrollLeft;
+        startScrollTop = resizableNav.scrollTop;
+        document.addEventListener('mousemove', resizeNav);
+        document.addEventListener('mouseup', stopResize);
+    });
+
+    resizableNav.addEventListener('scroll', function() {
+        const scrollLeft = resizableNav.scrollLeft;
+        const scrollTop = resizableNav.scrollTop;
+        localStorage.setItem('resizableNavScrollTop', JSON.stringify(scrollTop));
+    });
+
+    function resizeNav(event) {
+        const width = startWidth + event.clientX - startX;
+        const leftDistance = resizableNav.getBoundingClientRect().right;
+        resizableNav.style.width = width + 'px';
+        handle.style.left = leftDistance - 152 + 'px';
+        document.body.style.userSelect = 'none';
+        document.body.style.mozUserSelect = 'none';
+        document.body.style.webkitUserSelect = 'none';
+
+
+        localStorage.setItem('resizableNavWidth', JSON.stringify(width));
+    }
+
+    function stopResize() {
+        document.removeEventListener('mousemove', resizeNav);
+        document.body.style.userSelect = 'auto';
+        document.body.style.mozUserSelect = 'auto';
+        document.body.style.webkitUserSelect = 'auto';
+    }
+</script>
+                <header> 
+    <nav>
+        <a onclick="openContactPopup()">Contact</a> <a onclick="openImprintPopup()">Imprint</a>
+   </nav>
+</header>
+
+
+<div id="popup-container">
+<div class="popup" id="contact-popup">
+   <button onclick="closeContactPopup()" class="capa"> <svg fill="#000000" height="10px" 
+viewBox="0 0 460.775 460.775">
+<path d="M285.08,230.397L456.218,59.27c6.076-6.077,6.076-15.911,0-21.986L423.511,4.565c-2.913-2.911-6.866-4.55-10.992-4.55
+c-4.127,0-8.08,1.639-10.993,4.55l-171.138,171.14L59.25,4.565c-2.913-2.911-6.866-4.55-10.993-4.55
+c-4.126,0-8.08,1.639-10.992,4.55L4.558,37.284c-6.077,6.075-6.077,15.909,0,21.986l171.138,171.128L4.575,401.505
+c-6.074,6.077-6.074,15.911,0,21.986l32.709,32.719c2.911,2.911,6.865,4.55,10.992,4.55c4.127,0,8.08-1.639,10.994-4.55
+l171.117-171.12l171.118,171.12c2.913,2.911,6.866,4.55,10.993,4.55c4.128,0,8.081-1.639,10.992-4.55l32.709-32.719
+c6.074-6.075,6.074-15.909,0-21.986L285.08,230.397z"/></svg></button>
+</div>
+ 
+<div id="whitebox"><p><p>Galerie Klein<br>
+c/o Matthias Klein<br>
+Eisenbahnstraße 104<br>
+04315 Leipzig</p>
+</p>
+    <form> 
+       <Input type="email" placeholder="Your Email"></Input>
+       <button>Subscribe</button>
+    </form>
+</div>
+</div>
+
+<div class="popup" id="imprint-popup">
+    <button onclick="closeImprintPopup()" class="capa"> <svg fill="#000000" height="10px" 
+        viewBox="0 0 460.775 460.775">
+   <path d="M285.08,230.397L456.218,59.27c6.076-6.077,6.076-15.911,0-21.986L423.511,4.565c-2.913-2.911-6.866-4.55-10.992-4.55
+       c-4.127,0-8.08,1.639-10.993,4.55l-171.138,171.14L59.25,4.565c-2.913-2.911-6.866-4.55-10.993-4.55
+       c-4.126,0-8.08,1.639-10.992,4.55L4.558,37.284c-6.077,6.075-6.077,15.909,0,21.986l171.138,171.128L4.575,401.505
+       c-6.074,6.077-6.074,15.911,0,21.986l32.709,32.719c2.911,2.911,6.865,4.55,10.992,4.55c4.127,0,8.08-1.639,10.994-4.55
+       l171.117-171.12l171.118,171.12c2.913,2.911,6.866,4.55,10.993,4.55c4.128,0,8.081-1.639,10.992-4.55l32.709-32.719
+       c6.074-6.075,6.074-15.909,0-21.986L285.08,230.397z"/></svg></button>
+    
+       
+       <div>
+        
+        <h1 id="impressum">Impressum</h1>
+<p>Angaben gemäß § 5 TMG</p>
+<p>Galerie Klein
+Eisenbahnstraße 104
+04315 Leipzig</p>
+<p><strong>Vertreten durch:</strong><br>
+Matthias Klein</p>
+<p><strong>Kontakt:</strong><br>
+Telefon: 01234-789456<br>
+E-Mail: <a href="mailto:max@muster.de">max@muster.de</a></p>
+<p><strong>Haftungsausschluss:</strong></p>
+<p><strong>Haftung für Inhalte</strong><br>
+Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.</p>
+<p><strong>Haftung für Links</strong><br>
+Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.</p>
+<p><strong>Urheberrecht</strong><br>
+Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet. Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.</p>
+<p><strong>Datenschutz</strong><br>
+Die Nutzung unserer Webseite ist in der Regel ohne Angabe personenbezogener Daten möglich. Soweit auf unseren Seiten personenbezogene Daten (beispielsweise Name, Anschrift oder eMail-Adressen) erhoben werden, erfolgt dies, soweit möglich, stets auf freiwilliger Basis. Diese Daten werden ohne Ihre ausdrückliche Zustimmung nicht an Dritte weitergegeben.<br>
+Wir weisen darauf hin, dass die Datenübertragung im Internet (z.B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich.<br>
+Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten durch Dritte zur Übersendung von nicht ausdrücklich angeforderter Werbung und Informationsmaterialien wird hiermit ausdrücklich widersprochen. Die Betreiber der Seiten behalten sich ausdrücklich rechtliche Schritte im Falle der unverlangten Zusendung von Werbeinformationen, etwa durch Spam-Mails, vor.</p>
+<p><strong>Google Analytics</strong><br>
+Diese Website benutzt Google Analytics, einen Webanalysedienst der Google Inc. (&lsquo;&lsquo;Google&rsquo;&rsquo;). Google Analytics verwendet sog. &lsquo;&lsquo;Cookies&rsquo;&rsquo;, Textdateien, die auf Ihrem Computer gespeichert werden und die eine Analyse der Benutzung der Website durch Sie ermöglicht. Die durch den Cookie erzeugten Informationen über Ihre Benutzung dieser Website (einschließlich Ihrer IP-Adresse) wird an einen Server von Google in den USA übertragen und dort gespeichert. Google wird diese Informationen benutzen, um Ihre Nutzung der Website auszuwerten, um Reports über die Websiteaktivitäten für die Websitebetreiber zusammenzustellen und um weitere mit der Websitenutzung und der Internetnutzung verbundene Dienstleistungen zu erbringen. Auch wird Google diese Informationen gegebenenfalls an Dritte übertragen, sofern dies gesetzlich vorgeschrieben oder soweit Dritte diese Daten im Auftrag von Google verarbeiten. Google wird in keinem Fall Ihre IP-Adresse mit anderen Daten der Google in Verbindung bringen. Sie können die Installation der Cookies durch eine entsprechende Einstellung Ihrer Browser Software verhindern; wir weisen Sie jedoch darauf hin, dass Sie in diesem Fall gegebenenfalls nicht sämtliche Funktionen dieser Website voll umfänglich nutzen können. Durch die Nutzung dieser Website erklären Sie sich mit der Bearbeitung der über Sie erhobenen Daten durch Google in der zuvor beschriebenen Art und Weise und zu dem zuvor benannten Zweck einverstanden.</p>
+
+    
+     </div>
+    </div>
+
+
+
+ <script>
+const contactPopup = document.getElementById('popup-container');
+    const imprintPopup = document.getElementById('imprint-popup');
+    const content = document.getElementById('content');
+
+    function openContactPopup() {contactPopup.style.display = 'flex';
+                                 content.style.display = 'none';}
+
+    function closeContactPopup() {contactPopup.style.display = 'none';}
+
+    function openImprintPopup() {imprintPopup.style.display = 'flex';}
+    function closeImprintPopup() {imprintPopup.style.display = 'none';}
+
+    document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape' || event.keyCode === 27) {
+        closeContactPopup(event);
+        closeImprintPopup(event);
+    }
+    });
+
+
+ </script>   
+
+        
+            <section class="content" id="content">
+                <a href="/" id="close-link">close</a>
+                
+<article class="content-article">
+
+
+        <p><strong>Contact</strong> by  <br> </p>
+
+
+        <p>Galerie Klein<br>
+c/o Matthias Klein<br>
+Eisenbahnstraße 104<br>
+04315 Leipzig</p>
+
+
+</article>
+
+
+
+
+            </section>
+        </main>
+        <script>
+let domReady = (cb) => {
+  document.readyState === 'interactive' || document.readyState === 'complete'
+    ? cb()
+    : document.addEventListener('DOMContentLoaded', cb);
+};
+
+domReady(() => {
+  
+  document.body.style.visibility = 'visible';
+});
+        </script>
+
+        
+   
+    </body>
+</html>
