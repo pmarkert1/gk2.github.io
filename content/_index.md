@@ -1,6 +1,5 @@
----
-title: Homepage
-type: home
----
++++
+title = "Home"
++++
 
-
+Wo taucht das auf?
